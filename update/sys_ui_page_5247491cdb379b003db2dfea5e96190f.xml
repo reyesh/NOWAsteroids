@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script/>
+        <description/>
+        <direct>true</direct>
+        <endpoint>x_snc_asteroids_Asteroids.do</endpoint>
+        <html><![CDATA[<html>
+  <head>
+    <script src="x_snc_asteroids.jquery-1.4.1.min.jsdbx"></script>
+    <script src="x_snc_asteroids.vector_battle_reg.tf.jsdbx"></script>
+    <script src="x_snc_asteroids.ipad.jsdbx"></script>
+	  <script language="javascript" src="x_snc_asteroids.game.jsdbx" />
+
+    <style>
+      #canvas { border:1px solid black; top:0px; left:0px; }
+      .button { position:absolute; border:1px solid black; }
+      #left-controls { position:absolute; left:1px; bottom:0px; display:none; }
+      #right-controls { position:absolute; right:1px; bottom:0px; display:none; }
+      #up { width:200px; height:100px; bottom:100px;}
+      #left { width:100px; height:100px; bottom:0px;}
+      #right { width:100px; height:100px; bottom:0px; left:100px; }
+      #space { width:200px; height:200px; bottom:0px; right:0px; }
+    </style>
+  </head>
+  <body>
+    <div id="game-container">
+      <canvas id="canvas" width="780" height="540"></canvas>
+      <div id="left-controls">
+        <div id="up" class='button'>THRUST</div>
+        <div id="left" class='button'>LEFT</div>
+        <div id="right" class='button'>RIGHT</div>
+      </div>
+      <div id="right-controls">
+        <div id="space" class='button'>FIRE</div>
+      </div>
+    </div>
+  </body>
+</html>]]></html>
+        <name>Asteroids</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>reyes.h</sys_created_by>
+        <sys_created_on>2018-08-04 08:11:17</sys_created_on>
+        <sys_id>5247491cdb379b003db2dfea5e96190f</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_name>Asteroids</sys_name>
+        <sys_package display_value="Asteroids" source="x_snc_asteroids">a166cd98db379b003db2dfea5e961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Asteroids">a166cd98db379b003db2dfea5e961926</sys_scope>
+        <sys_update_name>sys_ui_page_5247491cdb379b003db2dfea5e96190f</sys_update_name>
+        <sys_updated_by>reyes.h</sys_updated_by>
+        <sys_updated_on>2018-08-04 15:25:25</sys_updated_on>
+    </sys_ui_page>
+</record_update>

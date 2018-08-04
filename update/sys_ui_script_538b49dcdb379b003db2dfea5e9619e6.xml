@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_script">
+    <sys_ui_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description/>
+        <global>false</global>
+        <name>x_snc_asteroids.ipad</name>
+        <script><![CDATA[var ipad = navigator.userAgent.match(/iPad/i) != null;
+
+if (ipad) {
+  $(function () {
+    $('#left-controls, #right-controls').show();
+    $('body > *').hide();
+    $('body').css('margin', '0px').css('background', 'black').prepend($('#game-container').remove());
+    $('#game-container').width(1024).css('margin-top', 26).show();
+    $('#canvas').attr('width', 1020).attr('height', 660).css('background', 'white').css('margin', '0 1');
+
+    $('head').prepend($('<meta/>').attr('name', 'viewport').attr('content', 'width=device-width; height=device-height; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;'));
+
+    $('#left-controls, #right-controls').bind('touchstart touchmove touchend', function (e) {
+      if (e.type != 'touchend') {
+        for (k in KEY_STATUS) {
+          KEY_STATUS[k] = false;
+        }
+      }
+      var touches = e.type == 'touchend' ? e.originalEvent.changedTouches : e.originalEvent.touches
+      for (var i = 0; i < touches.length; i++) {
+        var ele = document.elementFromPoint(touches[i].pageX, touches[i].pageY);
+        KEY_STATUS[ele.id] = (e.type != 'touchend');
+      }
+    });
+
+    $(document).bind('touchstart', function (e) {
+      window.gameStart = true;
+    });
+
+    $(document).bind('gesturestart gesturechange gestureend touchstart touchmove touchend', function (e) {
+      e.preventDefault();
+    });
+  });
+}]]></script>
+        <script_name>ipad</script_name>
+        <sys_class_name>sys_ui_script</sys_class_name>
+        <sys_created_by>reyes.h</sys_created_by>
+        <sys_created_on>2018-08-04 08:29:49</sys_created_on>
+        <sys_id>538b49dcdb379b003db2dfea5e9619e6</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>x_snc_asteroids.ipad</sys_name>
+        <sys_package display_value="Asteroids" source="x_snc_asteroids">a166cd98db379b003db2dfea5e961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Asteroids">a166cd98db379b003db2dfea5e961926</sys_scope>
+        <sys_update_name>sys_ui_script_538b49dcdb379b003db2dfea5e9619e6</sys_update_name>
+        <sys_updated_by>reyes.h</sys_updated_by>
+        <sys_updated_on>2018-08-04 08:43:55</sys_updated_on>
+        <use_scoped_format>false</use_scoped_format>
+    </sys_ui_script>
+</record_update>
