@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_ui_application">
+    <sys_ui_application action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <hint/>
+        <name>game files</name>
+        <order/>
+        <roles>x_snc_asteroids.game_files_user</roles>
+        <sys_class_name>sys_ui_application</sys_class_name>
+        <sys_created_by>reyes.h</sys_created_by>
+        <sys_created_on>2018-08-04 18:39:30</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7947dbd8dbbb9b003db2dfea5e961945</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>game files</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Asteroids" source="x_snc_asteroids">a166cd98db379b003db2dfea5e961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Asteroids">a166cd98db379b003db2dfea5e961926</sys_scope>
+        <sys_update_name>sys_ui_application_7947dbd8dbbb9b003db2dfea5e961945</sys_update_name>
+        <sys_updated_by>reyes.h</sys_updated_by>
+        <sys_updated_on>2018-08-04 18:39:30</sys_updated_on>
+    </sys_ui_application>
+</record_update>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script/>
+        <description/>
+        <direct>false</direct>
+        <endpoint>x_snc_asteroids_test.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+
+<g:evaluate var="laser_wav" object="true">
+   var gr = new GlideRecord("x_snc_asteroids_game_files");
+   gr.get("bff89f1cdbbb9b003db2dfea5e96193a");
+   laser_wav = gr.file_content;
+</g:evaluate>
+
+<g:evaluate var="explosion_wav" object="true">
+   var gr = new GlideRecord("x_snc_asteroids_game_files");
+   gr.get("480527d0dbfb9b003db2dfea5e961955");
+   explosion_wav = gr.file_content;
+</g:evaluate>
+
+<g:no_escape>
+<script type="text/javascript">
+var laser_wav = new Audio("data:audio/wav;base64," + "${laser_wav}");
+var explosion_wav = new Audio("data:audio/wav;base64," + "${explosion_wav}");
+explosion_wav.play();
+</script>
+</g:no_escape>
+
+</j:jelly>
+]]></html>
+        <name>test</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>reyes.h</sys_created_by>
+        <sys_created_on>2018-08-04 18:57:58</sys_created_on>
+        <sys_id>b97b579cdbbb9b003db2dfea5e9619c4</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_name>test</sys_name>
+        <sys_package display_value="Asteroids" source="x_snc_asteroids">a166cd98db379b003db2dfea5e961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Asteroids">a166cd98db379b003db2dfea5e961926</sys_scope>
+        <sys_update_name>sys_ui_page_b97b579cdbbb9b003db2dfea5e9619c4</sys_update_name>
+        <sys_updated_by>reyes.herrera@snc</sys_updated_by>
+        <sys_updated_on>2018-08-06 18:40:07</sys_updated_on>
+    </sys_ui_page>
+</record_update>

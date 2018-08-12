@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="game files" max_length="40" name="x_snc_asteroids_game_files" type="collection">
+        <element label="content type" max_length="40" name="content_type" type="string"/>
+        <element label="file content" max_length="8000000" name="file_content" type="string"/>
+        <element label="file name" max_length="40" name="file_name" type="string"/>
+    </element>
+</database>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function() {	
+	var c = this;		
+  c.display = function() {		
+		c.data.message = (c.data.sometext) ? 'Hello ' + c.data.sometext + '!' : '';
+	}
+	
+	c.display();
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>h1 {
+color: #428bca;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data>{
+	"data": {
+		"sometext": "world"
+	}
+}</demo_data>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>asteriods</id>
+        <internal>false</internal>
+        <link/>
+        <name>Asteriods</name>
+        <option_schema/>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function() {  /* populate the 'data' object */  /* e.g., data.table = $sp.getValue('table'); */})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>reyes.h</sys_created_by>
+        <sys_created_on>2018-08-11 22:25:39</sys_created_on>
+        <sys_id>b22e8cb2dbf313403db2dfea5e96199f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Asteriods</sys_name>
+        <sys_package display_value="Asteroids" source="x_snc_asteroids">a166cd98db379b003db2dfea5e961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Asteroids">a166cd98db379b003db2dfea5e961926</sys_scope>
+        <sys_update_name>sp_widget_b22e8cb2dbf313403db2dfea5e96199f</sys_update_name>
+        <sys_updated_by>reyes.h</sys_updated_by>
+        <sys_updated_on>2018-08-11 22:26:32</sys_updated_on>
+        <template><![CDATA[  <head>
+    <script src="x_snc_asteroids.jquery-1.4.1.min.jsdbx"></script>
+    <script src="x_snc_asteroids.vector_battle_reg.tf.jsdbx"></script>
+    <script src="x_snc_asteroids.ipad.jsdbx"></script>
+	  <script language="javascript" src="x_snc_asteroids.game.jsdbx" />
+
+    <style>
+      #canvas { border:1px solid black; top:0px; left:0px; }
+      .button { position:absolute; border:1px solid black; }
+      #left-controls { position:absolute; left:1px; bottom:0px; display:none; }
+      #right-controls { position:absolute; right:1px; bottom:0px; display:none; }
+      #up { width:200px; height:100px; bottom:100px;}
+      #left { width:100px; height:100px; bottom:0px;}
+      #right { width:100px; height:100px; bottom:0px; left:100px; }
+      #space { width:200px; height:200px; bottom:0px; right:0px; }
+    </style>
+  </head>
+  <body>
+    <div id="game-container">
+      <canvas id="canvas" width="780" height="540"></canvas>
+      <div id="left-controls">
+        <div id="up" class='button'>THRUST</div>
+        <div id="left" class='button'>LEFT</div>
+        <div id="right" class='button'>RIGHT</div>
+      </div>
+      <div id="right-controls">
+        <div id="space" class='button'>FIRE</div>
+      </div>
+    </div>
+ </body>
+]]></template>
+    </sp_widget>
+</record_update>

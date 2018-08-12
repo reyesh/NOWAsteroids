@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="file_name" label="file name" language="en" table="x_snc_asteroids_game_files">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>file_name</element>
+            <help/>
+            <hint/>
+            <label>file name</label>
+            <language>en</language>
+            <name>x_snc_asteroids_game_files</name>
+            <plural>file names</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>reyes.h</sys_created_by>
+            <sys_created_on>2018-08-04 18:39:30</sys_created_on>
+            <sys_id>7147dbd8dbbb9b003db2dfea5e961969</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>file name</sys_name>
+            <sys_package display_value="Asteroids" source="x_snc_asteroids">a166cd98db379b003db2dfea5e961926</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Asteroids">a166cd98db379b003db2dfea5e961926</sys_scope>
+            <sys_update_name>sys_documentation_x_snc_asteroids_game_files_file_name_en</sys_update_name>
+            <sys_updated_by>reyes.h</sys_updated_by>
+            <sys_updated_on>2018-08-04 18:39:30</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
